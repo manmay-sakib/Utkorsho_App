@@ -82,15 +82,11 @@ fun CourseCard() {
                         fontSize = 16.sp,
                         lineHeight = 20.sp,
                         fontWeight = FontWeight(700),
-
                     )
                 )
-
             }
         }
-
     }
-
 }
 
 @Preview

@@ -61,15 +61,12 @@ fun ScoreCardWithProgressIndicator() {
                     )
                 )
             }
-
         }
-
     }
 }
 
 @Preview
 @Composable
 fun ScoreCardWithProgressIndicatorPreview() {
-
     ScoreCardWithProgressIndicator()
 }

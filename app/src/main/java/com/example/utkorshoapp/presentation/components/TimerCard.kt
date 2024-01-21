@@ -114,9 +114,7 @@ fun AvgTimerCard() {
                     color = Color(0xFF71828A),
                 )
             )
-
         }
-
     }
 }
 

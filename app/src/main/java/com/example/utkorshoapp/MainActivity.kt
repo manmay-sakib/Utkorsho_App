@@ -30,13 +30,10 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             UtkorshoAppTheme {
-
                 Column(
                     modifier = Modifier
                         .fillMaxSize()
                         .background(Color(0xFFEFF3FB)),
-                    //horizontalAlignment = Alignment.CenterHorizontally,
-
                     ) {
                     QuizResultAppBar()
                     Column(
@@ -61,36 +58,8 @@ class MainActivity : ComponentActivity() {
                         Spacer(modifier = Modifier.height(16.dp))
                         TryAgainCard()
                     }
-
-
-
-
                 }
                 }
             }
         }
     }
-
-
-
-/*
-var value by remember{
-    mutableIntStateOf(0)
-}
-CustomComponent(
-indicatorValue = value
-)
-TextField(
-value = value.toString(),
-onValueChange = {
-    value = if(it.isNotEmpty()){
-        it.toInt()
-    } else{
-        0
-    }
-},
-keyboardOptions = KeyboardOptions(
-keyboardType = KeyboardType.Number
-)
-)
-*/

@@ -111,14 +111,9 @@ fun CustomCircularProgressIndicator(
                        )
                    }
                }
-
-
            }
-
        )
-
     }
-
 }
 
 @Preview(showBackground = true)
