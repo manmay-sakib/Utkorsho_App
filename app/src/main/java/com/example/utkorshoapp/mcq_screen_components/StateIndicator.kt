@@ -34,7 +34,7 @@ fun SateIndicatorCard(
     modifier: Modifier = Modifier
         .fillMaxWidth()
         .height(48.dp)
-        //.background(Color(0xFFFFFFFF))
+        .background(Color(0xFFFFFFFF))
 ) {
     Box(
         modifier = modifier,

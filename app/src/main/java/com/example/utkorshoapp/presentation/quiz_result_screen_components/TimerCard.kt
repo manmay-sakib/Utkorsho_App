@@ -1,4 +1,4 @@
-package com.example.utkorshoapp.presentation.components
+package com.example.utkorshoapp.presentation.quiz_result_screen_components
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
@@ -26,7 +26,9 @@ import com.example.utkorshoapp.R
 
 
 @Composable
-fun TotalTimerCard() {
+fun TotalTimerCard(
+    modifier: Modifier = Modifier
+) {
     Box(
         modifier = Modifier
             .height(106.dp)
@@ -70,7 +72,10 @@ fun TotalTimerCard() {
 }
 
 @Composable
-fun AvgTimerCard() {
+fun AvgTimerCard(
+    modifier: Modifier = Modifier
+
+) {
     Box(
         modifier = Modifier
             .height(106.dp)

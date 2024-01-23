@@ -1,4 +1,4 @@
-package com.example.utkorshoapp.presentation.components
+package com.example.utkorshoapp.presentation.quiz_result_screen_components
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background

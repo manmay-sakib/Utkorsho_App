@@ -29,6 +29,7 @@ import com.example.utkorshoapp.mcq_screen_components.DummyAppBar
 import com.example.utkorshoapp.mcq_screen_components.McqScreen
 import com.example.utkorshoapp.mcq_screen_components.QuestionText
 import com.example.utkorshoapp.mcq_screen_components.SateIndicatorCard
+import com.example.utkorshoapp.presentation.quiz_result_screen_components.QuizResultScreen
 import com.example.utkorshoapp.ui.theme.UtkorshoAppTheme
 
 class MainActivity : ComponentActivity() {
@@ -42,9 +43,8 @@ class MainActivity : ComponentActivity() {
                     color = Color(0xFFEFF3FB)
 
                 ) {
-                   McqScreen()
+                   QuizResultScreen()
                 }
-
                 }
             }
         }

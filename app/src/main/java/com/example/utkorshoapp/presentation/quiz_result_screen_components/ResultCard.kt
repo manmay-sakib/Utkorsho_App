@@ -1,4 +1,4 @@
-package com.example.utkorshoapp.presentation.components
+package com.example.utkorshoapp.presentation.quiz_result_screen_components
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
@@ -21,6 +21,7 @@ import androidx.compose.ui.unit.sp
 
 @Composable
 fun WrongAnswerResultCard(
+    modifier: Modifier
 ) {
     Box(
         modifier = Modifier
@@ -28,6 +29,7 @@ fun WrongAnswerResultCard(
             .width(167.dp)
             .clip(shape = RoundedCornerShape(8.dp))
             .background(Color(0xFFFF4D4D))
+
     ) {
         Column(
             modifier = Modifier
@@ -57,6 +59,7 @@ fun WrongAnswerResultCard(
 
 @Composable
 fun RightAnswerResultCard(
+    modifier: Modifier
 ) {
     Box(
         modifier = Modifier
@@ -64,6 +67,7 @@ fun RightAnswerResultCard(
             .width(167.dp)
             .clip(shape = RoundedCornerShape(8.dp))
             .background(Color(0xFF00BC4F))
+
     ) {
         Column(
             modifier = Modifier
@@ -94,6 +98,6 @@ fun RightAnswerResultCard(
 @Preview
 @Composable
 fun ResultCardPreview() {
-    RightAnswerResultCard()
+    RightAnswerResultCard(modifier = Modifier)
 
 }
