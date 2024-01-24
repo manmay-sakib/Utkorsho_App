@@ -24,6 +24,9 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
+import com.example.utkorshoapp.SplashScreenUderAndroid_12.Navigation
+import com.example.utkorshoapp.SplashScreenUderAndroid_12.SplashScreen
 import com.example.utkorshoapp.mcq_screen_components.AnswerCardBox
 import com.example.utkorshoapp.mcq_screen_components.DummyAppBar
 import com.example.utkorshoapp.mcq_screen_components.McqScreen
@@ -36,24 +39,23 @@ class MainActivity : ComponentActivity() {
     @OptIn(ExperimentalMaterial3Api::class)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        //use this installSplashScreen for having splash screen for android 12 and above.
+        installSplashScreen().setKeepOnScreenCondition{true}
         setContent {
             UtkorshoAppTheme {
-                Surface(
-                    modifier = Modifier.fillMaxSize(),
-                    color = Color(0xFFEFF3FB)
-
-                ) {
-                   QuizResultScreen()
-                }
+                // use this Navigation for having the splash screen, for android 11 and below
+                //Navigation()
                 }
             }
         }
     }
 
-@Preview
-@Composable
-fun MainScreen() {
-    UtkorshoAppTheme {
 
-    }
-}
+
+//Surface(
+//modifier = Modifier.fillMaxSize(),
+//color = Color(0xFFEFF3FB)
+//
+//) {
+//    QuizResultScreen()
+//}
